@@ -32,5 +32,6 @@
   },
   "migrate-history": [
     "cloud-function"
-  ]
+  ],
+  "last-module-event-record-time": 1612859156181
 }
