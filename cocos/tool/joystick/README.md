@@ -4,12 +4,12 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/cocos-creator-joystick.svg?style=social)
 [![Cocos Creator version](https://img.shields.io/badge/Cocos_Creator-v2.4.x-blue.svg?style=social)](https://www.cocos.com/creator)
-![GitHub top language](https://img.shields.io/github/languages/top/YunYouJun/cocos-creator-joystick.svg?style=social&logo=typescript)
+![GitHub top language](https://img.shields.io/github/languages/top/YunYouJun/cocos-creator-joystick.svg?style=social&logo=javascript)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/cocos-creator-joystick.svg?style=social&logo=visual-studio-code)
 
 中文文档 | [English Docs](./README.en.md)
 
-在线预览: [cocos-creator-joystick](https://yunyoujun.github.io/cocos-creator-joystick)
+在线预览: <https://yunyoujun.github.io/cocos-creator-joystick/>
 
 最新版本已使用 TypeScript 重写，更友好的结构与注释。如果您想要查看纯 JavaScript 版本，请见旧版本 [v0.0.2](https://github.com/YunYouJun/cocos-creator-joystick/releases/tag/v0.0.2)。
 

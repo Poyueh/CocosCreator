@@ -582,7 +582,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 480,
+      "width": 960,
       "height": 640
     },
     "_anchorPoint": {
@@ -650,7 +650,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 480,
+      "width": 960,
       "height": 640
     },
     "_anchorPoint": {
@@ -756,7 +756,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 480,
+      "width": 960,
       "height": 640
     },
     "_resize": 0,
@@ -1223,7 +1223,6 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_useOriginalSize": false,
     "_string": "Joystick Type",
     "_N$string": "Joystick Type",
     "_fontSize": 40,
@@ -1523,7 +1522,6 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_useOriginalSize": false,
     "_string": "Fixed",
     "_N$string": "Fixed",
     "_fontSize": 20,
@@ -1909,7 +1907,6 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_useOriginalSize": false,
     "_string": "Follow",
     "_N$string": "Follow",
     "_fontSize": 20,

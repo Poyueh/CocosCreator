@@ -4,12 +4,12 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/cocos-creator-joystick.svg?style=social)
 [![Cocos Creator version](https://img.shields.io/badge/Cocos_Creator-v2.x-blue.svg?style=social)](https://www.cocos.com/creator)
-![GitHub top language](https://img.shields.io/github/languages/top/YunYouJun/cocos-creator-joystick.svg?style=social&logo=typescript)
+![GitHub top language](https://img.shields.io/github/languages/top/YunYouJun/cocos-creator-joystick.svg?style=social&logo=javascript)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/cocos-creator-joystick.svg?style=social&logo=visual-studio-code)
 
 [中文文档](./README.md) | English Docs
 
-Online Preview: [cocos-creator-joystick](https://yunyoujun.github.io/cocos-creator-joystick)
+Online Address: <https://yunyoujun.github.io/cocos-creator-joystick/>
 
 The latest version has been rewritten with TypeScript, with a more friendly structure and comments. If you want to view the pure JavaScript version, please see the old version [v0.0.2](https://github.com/YunYouJun/cocos-creator-joystick/releases/tag/v0.0.2).
 
