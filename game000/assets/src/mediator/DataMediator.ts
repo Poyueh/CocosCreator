@@ -1,4 +1,4 @@
-import {instance} from "../../joystick/scripts/Joystick";
+import {GlobalListener} from "../../joystick/scripts/Joystick";
 import MyData from "../data/MyData"
 export default class DataMediator extends puremvc.Mediator {
     public mediatorName = "DataMediator";
@@ -11,9 +11,9 @@ export default class DataMediator extends puremvc.Mediator {
         this.btn  = root.getChildByName("addNum").getComponent(cc.Button); 
         this.btn.node.on('click', this.clickCallBack, this);
         
-        instance.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
-        instance.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
-        instance.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+        GlobalListener.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+        GlobalListener.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        GlobalListener.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
       }
     
     onTouchStart() {}

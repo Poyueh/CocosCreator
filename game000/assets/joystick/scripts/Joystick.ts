@@ -3,7 +3,7 @@ const { ccclass, property } = cc._decorator;
 /**
  * 全局事件监听实例
  */
-export const instance = new cc.EventTarget();
+export const GlobalListener = new cc.EventTarget();
 
 /**
  * 方向类型
@@ -94,14 +94,14 @@ export default class Joystick extends cc.Component {
    * 启用时
    */
   onEnable() {
-    instance.on("set_joystick_type", this._onSetJoystickType, this);
+    GlobalListener.on("set_joystick_type", this._onSetJoystickType, this);
   }
 
   /**
    * 禁用时
    */
   onDisable() {
-    instance.off("set_joystick_type", this._onSetJoystickType, this);
+    GlobalListener.off("set_joystick_type", this._onSetJoystickType, this);
   }
 
   /**
@@ -129,7 +129,7 @@ export default class Joystick extends cc.Component {
    * @param event
    */
   _touchStartEvent(event: cc.Event.EventTouch) {
-    instance.emit(cc.Node.EventType.TOUCH_START, event);
+    GlobalListener.emit(cc.Node.EventType.TOUCH_START, event);
 
     const touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
 
@@ -192,7 +192,7 @@ export default class Joystick extends cc.Component {
       speedType = SpeedType.FAST;
     }
 
-    instance.emit(cc.Node.EventType.TOUCH_MOVE, event, {
+    GlobalListener.emit(cc.Node.EventType.TOUCH_MOVE, event, {
       speedType: speedType,
       moveDistance: p,
     });
@@ -208,7 +208,7 @@ export default class Joystick extends cc.Component {
       this.node.opacity = 0;
     }
 
-    instance.emit(cc.Node.EventType.TOUCH_END, event, {
+    GlobalListener.emit(cc.Node.EventType.TOUCH_END, event, {
       speedType: SpeedType.STOP,
     });
   }

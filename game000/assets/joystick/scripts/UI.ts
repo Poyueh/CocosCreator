@@ -1,4 +1,4 @@
-import { JoystickType, instance } from "./Joystick";
+import { JoystickType, GlobalListener } from "./Joystick";
 
 const { ccclass } = cc._decorator;
 
@@ -8,13 +8,13 @@ export default class UI extends cc.Component {
    * 使用固定摇杆
    */
   useFixedType() {
-    instance.emit("set_joystick_type", JoystickType.FIXED);
+    GlobalListener.emit("set_joystick_type", JoystickType.FIXED);
   }
 
   /**
    * 使用跟随摇杆
    */
   useFollowType() {
-    instance.emit("set_joystick_type", JoystickType.FOLLOW);
+    GlobalListener.emit("set_joystick_type", JoystickType.FOLLOW);
   }
 }

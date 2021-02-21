@@ -1,7 +1,7 @@
 import { SpeedType } from "./Joystick";
 const { ccclass, property } = cc._decorator;
 
-import { instance } from "./Joystick";
+import { GlobalListener } from "./Joystick";
 
 @ccclass
 export default class Player extends cc.Component {
@@ -59,9 +59,9 @@ export default class Player extends cc.Component {
       this._body = this.getComponent(cc.RigidBody);
     }
 
-    instance.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
-    instance.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
-    instance.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+    GlobalListener.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+    GlobalListener.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
+    GlobalListener.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
   }
 
   onTouchStart() {}
